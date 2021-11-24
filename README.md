@@ -20,4 +20,6 @@ chmod +x nginx_add_hosts.sh
 Hooooray! :tada:
 
 
-- [ ] Add automatic script for Certbot and generate valid SSL certificate
+## Next tasks
+- [ ] Add automatic script for Certbot to generate valid SSL certificate for each new host
+- [ ] Create https version of virtual host index.html file
