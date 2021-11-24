@@ -7,9 +7,9 @@ Simple Bash script that help you add virtual hosts to Nginx, because it's a pain
 
 ## Install instructions
 
-Just simple use git to clone this repo, or download the files to one directory, or [download](https://spajk.cz/ftp/add_nginx_vhost.zip) and unzip this file.
+Just simple use git to clone this repo, or download the files mentioned above to one directory.
 
-How to clone to your server:
+### How to clone to your server:
 ```
 git clone https://github.com/spajk-cz/add_nginx_vhost
 cd add_nginx_vhost/
