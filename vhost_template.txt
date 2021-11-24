@@ -1,0 +1,10 @@
+server {
+listen 80; # Specify the listening port
+listen [::]:80; # The same thing for IPv6
+root /var/www/host/html; # The path to the website files
+index index.html index.htm; # Files to display if only the domain name is specified in the address
+server_name host; # Domain name of this site
+location / {
+try_files $uri $uri/ =404;
+}
+}
