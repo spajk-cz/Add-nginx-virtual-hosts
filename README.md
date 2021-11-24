@@ -17,4 +17,7 @@ chmod +x nginx_add_hosts.sh
 ./nginx_add_hosts.sh
 ```
 
-Hooooray! 
+Hooooray! :tada:
+
+
+- [ ] Add automatic script for Certbot and generate valid SSL certificate
