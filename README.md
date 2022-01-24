@@ -17,7 +17,7 @@ chmod +x nginx_add_hosts.sh
 ./nginx_add_hosts.sh
 ```
 
-If it return eroor like `bash: ./nginx_add_hosts.sh: /bin/bash^M: bad interpreter: No such file or directory` use this command:
+If it return error like `bash: ./nginx_add_hosts.sh: /bin/bash^M: bad interpreter: No such file or directory` use this command:
 ```
 sed -i -e 's/\r$//' nginx_add_hosts.sh
 ```
