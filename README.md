@@ -22,4 +22,4 @@ Hooooray! :tada:
 
 ## Next tasks
 - [x] Add automatic script for Certbot to generate valid SSL certificate for each new host
-- [ ] Create https version of virtual host index.html file
+- [ ] Check if certbot is installed before running it.
