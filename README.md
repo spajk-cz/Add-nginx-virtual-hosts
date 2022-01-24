@@ -21,5 +21,5 @@ Hooooray! :tada:
 
 
 ## Next tasks
-- [ ] Add automatic script for Certbot to generate valid SSL certificate for each new host
+- [x] Add automatic script for Certbot to generate valid SSL certificate for each new host
 - [ ] Create https version of virtual host index.html file
