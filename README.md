@@ -17,15 +17,16 @@ chmod +x nginx_add_hosts.sh
 ./nginx_add_hosts.sh
 ```
 
+## If script return error... :exploding_head:
 If it return error like `bash: ./nginx_add_hosts.sh: /bin/bash^M: bad interpreter: No such file or directory` use this command:
 ```
 sed -i -e 's/\r$//' nginx_add_hosts.sh
 ```
-This this problem is caused by creating scripts in Windows/Mac env, because Unix uses different line endings. And i sometimes use Win or Mac. :)
+This problem is caused by creating scripts in Windows/Mac env, because Unix uses different line endings. And i sometimes use Win or Mac stations. :wink:
 
 Hooooray! :tada:
 
 
 ## Next tasks
 - [x] Add automatic script for Certbot to generate valid SSL certificate for each new host
-- [ ] Check if certbot is installed before running it.
+- [ ] Check if certbot is installed before running it :thinking:
