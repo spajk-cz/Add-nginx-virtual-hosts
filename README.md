@@ -2,7 +2,7 @@
 
 Simple Bash script that help you add virtual hosts to Nginx, because it's a pain to create them manually for each new web.
 
-![Output of this simple script](https://spajk.cz/ftp/Termius_GGO2aXK33Q.png)
+![Output of this simple script](https://kosc.cz/nginx_virt_host.png)
 
 
 ## Install instructions
@@ -16,6 +16,12 @@ cd add_nginx_vhost/
 chmod +x nginx_add_hosts.sh
 ./nginx_add_hosts.sh
 ```
+
+If it return eroor like `bash: ./nginx_add_hosts.sh: /bin/bash^M: bad interpreter: No such file or directory` use this command:
+```
+sed -i -e 's/\r$//' nginx_add_hosts.sh
+```
+This this problem is caused by creating scripts in Windows/Mac env, because Unix uses different line endings. And i sometimes use Win or Mac. :)
 
 Hooooray! :tada:
 
