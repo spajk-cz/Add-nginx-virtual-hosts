@@ -7,9 +7,9 @@ echo -e "\033[1;36m      #######################################################
 echo -e "\n"
 
 create_vhost(){
-	read -p "Enter the domain ( ex: example.com ): " HOST
-	echo -e ""
-	echo -e "Virtual Host is started to creating ${HOST} \e[00m"
+        read -p "Enter the domain ( ex: example.com ): " HOST
+        echo -e ""
+        echo -e "Virtual Host is started to creating ${HOST} \e[00m"
         #Fake progress for better effect - thanx to Buchtič!
         count=0
         until [ $count -eq 4 ]
@@ -23,8 +23,8 @@ create_vhost(){
         echo -ne "\033[1;32m"
         echo -n "  100%"
         echo -ne "\e[00m"
-	cp vhost_template.txt /etc/nginx/sites-available/${HOST}
-	sed -i "s|host|${HOST}|g" /etc/nginx/sites-available/${HOST}
+        cp vhost_template.txt /etc/nginx/sites-available/${HOST}
+        sed -i "s|host|${HOST}|g" /etc/nginx/sites-available/${HOST}
         ln -s /etc/nginx/sites-available/${HOST} /etc/nginx/sites-enabled/${HOST}
         mkdir /var/www/${HOST}/
         mkdir /var/www/${HOST}/html/
