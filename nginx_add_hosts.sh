@@ -39,7 +39,7 @@ create_vhost(){
     sudo certbot --nginx -d ${HOST}
         echo -e "\n"
         echo -e "\e[01;32m      ########################################################\e[00m"
-        echo -e "\e[01;32m      ####    HTTTP certificate successfully deployed!    ####\e[00m"
+        echo -e "\e[01;32m      ####    HTTTPS certificate successfully deployed    ####\e[00m"
         echo -e "\e[01;32m      ########################################################\e[00m"
         echo -e "\n"
 }
